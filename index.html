@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>Glassmorphism Calculator</h2>
+    <div class="container">
+      <form name="form" onsubmit="getResult()">
+        <div class="calculator">
+          <div class="result-section">
+            <input
+              class="result-value"
+              type="text"
+              value="12321"
+              name="resultValue"
+            />
+            <input
+              class="result-input"
+              type="text"
+              value="111*111"
+              name="resultInput"
+            />
+          </div>
+          <div class="buttons-section">
+            <div class="row">
+              <div class="btn" onclick="resetInput()">C</div>
+              <div class="btn" onclick="handleBackspace()">
+                <span class="material-icons backspace"> backspace </span>
+              </div>
+              <div class="btn" onclick="calc('%')">%</div>
+              <div class="btn" onclick="calc('/')">÷</div>
+            </div>
+            <div class="row">
+              <div class="btn" onclick="calc('7')">7</div>
+              <div class="btn" onclick="calc('8')">8</div>
+              <div class="btn" onclick="calc('9')">9</div>
+              <div class="btn" onclick="calc('*')">
+                <span style="margin-bottom: 4px">x</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="btn" onclick="calc('4')">4</div>
+              <div class="btn" onclick="calc('5')">5</div>
+              <div class="btn" onclick="calc('6')">6</div>
+              <div class="btn" onclick="calc('-')">-</div>
+            </div>
+            <div class="row">
+              <div class="btn" onclick="calc('1')">1</div>
+              <div class="btn" onclick="calc('2')">2</div>
+              <div class="btn" onclick="calc('3')">3</div>
+              <div class="btn" onclick="calc('+')">+</div>
+            </div>
+            <div class="row">
+              <div class="btn" onclick="calc('0')">0</div>
+              <div class="btn" onclick="calc('.')">.</div>
+              <div class="btn equals" onclick="getResult()">=</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="backdrop"></div>
+    <div class="bg-credits">
+      Photo by
+      <a
+        href="https://unsplash.com/@onefabian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Fabian Quintero</a
+      >
+      on
+      <a
+        href="https://unsplash.com/s/photos/emerald-bay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Unsplash</a
+      >
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
